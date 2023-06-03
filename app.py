@@ -9,7 +9,7 @@ app = Flask(__name__)
 
 @app.route('/', methods=['GET'])
 def index():
-    return('Hi, This is OCR KTM PCR API for extract NIM')
+    return('Hi, This is OCR KTM PCR API for extract NIM Ilham')
     
 @app.route('/predict', methods=['POST'])
 def extract_nim():
