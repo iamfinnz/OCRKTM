@@ -39,4 +39,4 @@ def extract_nim():
     result = re.findall(pattern, text)
     
     # Mengembalikan hasil ekstraksi deretan angka 10 digit sebagai respons HTTP
-    return {"NIM" : result}
+    return {"nim" : result}
