@@ -2,14 +2,14 @@ import pytesseract
 import re
 import numpy as np
 from PIL import Image, ImageEnhance
-from flask import Flask, request, jsonify
+from flask import Flask, request
 import cv2
 
 app = Flask(__name__)
 
 @app.route('/', methods=['GET'])
 def index():
-    return('Hi, This is OCR KTM PCR API for extract NIM Ilham')
+    return('Hi, This is OCR KTM PCR API for extract NIM')
     
 @app.route('/predict', methods=['POST'])
 def extract_nim():
@@ -39,4 +39,4 @@ def extract_nim():
     result = re.findall(pattern, text)
     
     # Mengembalikan hasil ekstraksi deretan angka 10 digit sebagai respons HTTP
-    return jsonify(result)
+    return {"NIM" : result}
