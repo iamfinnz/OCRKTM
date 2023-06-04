@@ -2,7 +2,7 @@ import pytesseract
 import re
 import numpy as np
 from PIL import Image, ImageEnhance
-from flask import Flask, request
+from flask import Flask, request, jsonify
 import cv2
 
 app = Flask(__name__)
@@ -38,5 +38,8 @@ def extract_nim():
     pattern = r'\b\d{10}\b'
     result = re.findall(pattern, text)
     
+    # Joinkan result 
+    response = ''.join(result)
+    
     # Mengembalikan hasil ekstraksi deretan angka 10 digit sebagai respons HTTP
-    return {"nim" : result}
+    return jsonify(nim=response)
