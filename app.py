@@ -42,4 +42,4 @@ def extract_nim():
     response = ''.join(result)
     
     # Mengembalikan hasil ekstraksi deretan angka 10 digit sebagai respons HTTP
-    return jsonify(nim=response)
+    return jsonify(ayam=response)
