@@ -38,7 +38,7 @@ def extract_nim():
     pattern = r'\b\d{10}\b'
     result = re.findall(pattern, text)
     
-    # Joinkan result 
+    # Joinkan result agar menjadi nim
     response = ''.join(result)
     
     # Mengembalikan hasil ekstraksi deretan angka 10 digit sebagai respons HTTP
