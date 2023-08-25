@@ -44,3 +44,7 @@ Source code to extract NIM of KTM with Tesseract OCR
    git pull
    docker-compose up -d
    ```
+   
+## Result
+[Home](http://103.193.176.122:5000/) (Request GET) <br/>
+[Predict](http://103.193.176.122:5000/predict) (Request POST)
