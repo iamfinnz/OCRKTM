@@ -10,7 +10,7 @@ Source code to extract NIM of KTM PCR with Tesseract OCR
 3. Python v3.10.x (built-in Ubuntu OS)
 4. Tesseract-ocr for Ubuntu OS
 5. Python Flask
-6. Docker and docker compose
+6. Docker and docker compose <br/>
    https://docs.docker.com/engine/install/ubuntu/
 
 ## How to run on local
