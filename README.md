@@ -1,5 +1,5 @@
 # OCRKTM
-Source code to extract NIM of KTM PCR with Tesseract OCR
+Source code to extract NIM of KTM with Tesseract OCR
 
 ## Prerequisites
 1. Server/Virtual Machine with this minimum spesification
